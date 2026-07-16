@@ -1,4 +1,365 @@
 /* clasecitas-vlv v0.1.0 | MIT License */
 
-/* Legacy aliases are generated in a later build phase. */
+/* Legacy flex and gap aliases */
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-gap-auto {
+  gap: auto;
+}
+
+.flex-gap-0 {
+  gap: 0;
+}
+
+.grid-gap-0 {
+  gap: 0;
+}
+
+.flex-gap-1 {
+  gap: 0.25rem;
+}
+
+.grid-gap-1 {
+  gap: 0.25rem;
+}
+
+.flex-gap-2 {
+  gap: 0.5rem;
+}
+
+.grid-gap-2 {
+  gap: 0.5rem;
+}
+
+.flex-gap-3 {
+  gap: 0.75rem;
+}
+
+.grid-gap-3 {
+  gap: 0.75rem;
+}
+
+.flex-gap-4 {
+  gap: 1rem;
+}
+
+.grid-gap-4 {
+  gap: 1rem;
+}
+
+.flex-gap-5 {
+  gap: 1.25rem;
+}
+
+.grid-gap-5 {
+  gap: 1.25rem;
+}
+
+.flex-gap-6 {
+  gap: 1.5rem;
+}
+
+.grid-gap-6 {
+  gap: 1.5rem;
+}
+
+.flex-gap-7 {
+  gap: 1.75rem;
+}
+
+.grid-gap-7 {
+  gap: 1.75rem;
+}
+
+.flex-gap-8 {
+  gap: 2rem;
+}
+
+.grid-gap-8 {
+  gap: 2rem;
+}
+
+.flex-gap-9 {
+  gap: 2.25rem;
+}
+
+.grid-gap-9 {
+  gap: 2.25rem;
+}
+
+.flex-gap-10 {
+  gap: 2.5rem;
+}
+
+.grid-gap-10 {
+  gap: 2.5rem;
+}
+
+.flex-gap-11 {
+  gap: 2.75rem;
+}
+
+.grid-gap-11 {
+  gap: 2.75rem;
+}
+
+.flex-gap-12 {
+  gap: 3rem;
+}
+
+.grid-gap-12 {
+  gap: 3rem;
+}
+
+.flex-gap-13 {
+  gap: 3.25rem;
+}
+
+.grid-gap-13 {
+  gap: 3.25rem;
+}
+
+.flex-gap-14 {
+  gap: 3.5rem;
+}
+
+.grid-gap-14 {
+  gap: 3.5rem;
+}
+
+.flex-gap-15 {
+  gap: 3.75rem;
+}
+
+.grid-gap-15 {
+  gap: 3.75rem;
+}
+
+.flex-gap-16 {
+  gap: 4rem;
+}
+
+.grid-gap-16 {
+  gap: 4rem;
+}
+
+.flex-gap-17 {
+  gap: 4.25rem;
+}
+
+.grid-gap-17 {
+  gap: 4.25rem;
+}
+
+.flex-gap-18 {
+  gap: 4.5rem;
+}
+
+.grid-gap-18 {
+  gap: 4.5rem;
+}
+
+.flex-gap-19 {
+  gap: 4.75rem;
+}
+
+.grid-gap-19 {
+  gap: 4.75rem;
+}
+
+.flex-gap-20 {
+  gap: 5rem;
+}
+
+.grid-gap-20 {
+  gap: 5rem;
+}
+
+/* Legacy text aliases */
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.texto-truncado {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.text-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.text-bold-xs {
+  font-weight: 400;
+}
+
+.text-bold-md {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-size-1 {
+  font-size: 0.25rem;
+}
+
+.text-size-2 {
+  font-size: 0.5rem;
+}
+
+.text-size-3 {
+  font-size: 0.75rem;
+}
+
+.text-size-4 {
+  font-size: 1rem;
+}
+
+.text-size-5 {
+  font-size: 1.25rem;
+}
+
+.text-size-6 {
+  font-size: 1.5rem;
+}
+
+.text-size-7 {
+  font-size: 1.75rem;
+}
+
+.text-size-8 {
+  font-size: 2rem;
+}
+
+/* Legacy color and utility aliases */
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-red {
+  color: #ff0000;
+}
+
+.color-text-secondary {
+  color: var(--cc-color-muted);
+}
+
+.color-gray-light {
+  background-color: #f7f7f7;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-gray-light {
+  background-color: #f7f7f7;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-red {
+  background-color: #ff0000;
+}
+
+.bg-background-secondary {
+  background-color: #eeeeee;
+}
+
+.border-none {
+  border: none;
+}
+
+.rounded-1 {
+  border-radius: 0.25rem;
+}
+
+.rounded-2 {
+  border-radius: 0.5rem;
+}
+
+.rounded-3 {
+  border-radius: 0.75rem;
+}
+
+.rounded-4 {
+  border-radius: 1rem;
+}
+
+.display-none {
+  display: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.separador-horizontal {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(180 180 180 / 0.3);
+}
