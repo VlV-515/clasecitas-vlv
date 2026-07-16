@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>clasecitas-vlv</title>
+    <link rel="stylesheet" href="./assets/clasecitas.css" />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body class="m-0 bg-light text-dark">
+    <header class="site-hero">
+      <div class="container">
+        <div class="flex flex-col gap-6 py-12 md:flex-row md:items-center md:justify-between">
+          <div class="stack">
+            <span class="badge bg-primary text-surface">Utility CSS</span>
+            <h1 class="m-0 text-5xl font-black">clasecitas-vlv</h1>
+            <p class="m-0 text-lg text-muted">Tiny CSS utilities, Tailwind-like names, Bootstrap 5-style grid.</p>
+          </div>
+          <div class="demo-device shadow-lg">
+            <div class="demo-bar"></div>
+            <div class="grid grid-cols-3 gap-2 p-4">
+              <span class="demo-tile bg-primary"></span>
+              <span class="demo-tile bg-success"></span>
+              <span class="demo-tile bg-warning"></span>
+              <span class="demo-tile bg-danger"></span>
+              <span class="demo-tile bg-info"></span>
+              <span class="demo-tile bg-secondary"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-8">
+      <section class="card mb-6">
+        <h2 class="mt-0 text-2xl font-bold">Spacing and flex</h2>
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div class="rounded-lg bg-light p-4">
+            <code>flex flex-col gap-4 md:flex-row</code>
+          </div>
+          <button class="rounded-lg bg-primary px-4 py-2 font-semibold text-surface">Action</button>
+        </div>
+      </section>
+
+      <section class="card mb-6">
+        <h2 class="mt-0 text-2xl font-bold">Bootstrap 5-style grid</h2>
+        <div class="row g-2">
+          <div class="col-12 col-md-4"><div class="example-cell">col-12 col-md-4</div></div>
+          <div class="col-12 col-md-4"><div class="example-cell">col-12 col-md-4</div></div>
+          <div class="col-12 col-md-4"><div class="example-cell">col-12 col-md-4</div></div>
+        </div>
+      </section>
+
+      <section class="card mb-6">
+        <h2 class="mt-0 text-2xl font-bold">Responsive utilities</h2>
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-3 lg:gap-6">
+          <div class="rounded-lg bg-primary p-4 text-surface">md:grid-cols-3</div>
+          <div class="rounded-lg bg-success p-4 text-surface">lg:gap-6</div>
+          <div class="rounded-lg bg-dark p-4 text-surface">mobile first</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="mt-0 text-2xl font-bold">Typography and color</h2>
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+          <p class="m-0 text-sm text-muted">text-sm text-muted</p>
+          <p class="m-0 text-xl font-semibold text-primary">text-xl font-semibold text-primary</p>
+          <p class="m-0 truncate rounded-md border p-3">truncate rounded-md border</p>
+          <p class="m-0 rounded-lg bg-dark p-3 text-surface">bg-dark text-surface</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
