@@ -85,4 +85,13 @@ Classes are mobile-first. Unprefixed utilities apply to all screen sizes; prefix
 - [Class reference](docs/reference.md)
 - [Migration guide](docs/migration.md)
 - [AI usage guide](docs/AI.md)
+- [Agent guidance](docs/agent-guidance.md)
 
+## Agent Files
+
+This repository includes agent-facing instructions for Codex-compatible workflows:
+
+- `AGENTS.md`: project entrypoint for coding agents.
+- `.codex/rules/`: project rules.
+- `.codex/skills/`: repeatable task workflows.
+- `.codex/agents/`: role prompts for implementation, review, docs, and release work.

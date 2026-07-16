@@ -2,6 +2,8 @@
 
 Use this guide when generating markup with `clasecitas-vlv`.
 
+For repository maintenance tasks, start with root `AGENTS.md` and the files under `.codex/`.
+
 ## Rules
 
 - Prefer Tailwind-like utility names from the default bundle.
@@ -35,4 +37,3 @@ Use this guide when generating markup with `clasecitas-vlv`.
 - `flex-column`, `justify-content-between`, `align-items-center`, `flex-gap-*` in new code.
 - `col-xs-*`; use `col-*` for extra-small.
 - Inline spacing values when a `0..20` utility exists.
-
