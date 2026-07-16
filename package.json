@@ -1,0 +1,60 @@
+{
+  "name": "clasecitas-vlv",
+  "version": "0.1.0",
+  "description": "A small utility-first CSS toolkit with Tailwind-like naming and a Bootstrap 5-style grid.",
+  "type": "module",
+  "license": "MIT",
+  "author": "VLV",
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
+  "style": "dist/clasecitas.css",
+  "sass": "src/scss/index.scss",
+  "files": [
+    "dist",
+    "src/scss",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "style": "./dist/clasecitas.css",
+      "sass": "./src/scss/index.scss",
+      "default": "./dist/clasecitas.css"
+    },
+    "./css": "./dist/clasecitas.css",
+    "./css/min": "./dist/clasecitas.min.css",
+    "./legacy": "./dist/legacy.css",
+    "./legacy/min": "./dist/legacy.min.css",
+    "./scss": "./src/scss/index.scss",
+    "./scss/legacy": "./src/scss/legacy.scss"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "lint": "node scripts/lint.mjs",
+    "test": "node scripts/test.mjs",
+    "site:build": "node scripts/build-site.mjs",
+    "pack:dry": "npm pack --dry-run",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "utility-css",
+    "responsive",
+    "grid",
+    "bootstrap-grid",
+    "tailwind-like"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+
