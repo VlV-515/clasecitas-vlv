@@ -6,9 +6,7 @@ Update docs when public API changes:
 
 - `README.md`: quick start and high-level usage.
 - `docs/reference.md`: class catalog.
-- `docs/migration.md`: old-to-new names and compatibility notes.
 - `docs/AI.md`: guidance for AI-generated markup.
-- `docs/agent-guidance.md`: maintainer guidance for agent workflows.
 
 ## Demo Site
 
@@ -22,4 +20,4 @@ Update docs when public API changes:
 - Public docs are English by default.
 - Keep examples framework-neutral.
 - Avoid private project references.
-
+- Document only supported Tailwind-like class names.

@@ -1,6 +1,6 @@
 ---
 name: update-utilities
-description: Update or add CSS utility classes, spacing scales, colors, typography, borders, effects, or legacy aliases.
+description: Update or add CSS utility classes, spacing scales, colors, typography, borders, or effects.
 ---
 
 # Update Utilities Skill
@@ -21,6 +21,5 @@ Use this skill when changing generated CSS classes.
 ## Output Requirements
 
 - Generated output in `dist/` and `src/scss/generated/` must match generators.
-- Default CSS must not include legacy-only aliases.
+- CSS must not include alias classes or Bootstrap-like utility names.
 - Public class changes must be documented.
-

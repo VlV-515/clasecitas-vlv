@@ -26,10 +26,7 @@
     },
     "./css": "./dist/clasecitas.css",
     "./css/min": "./dist/clasecitas.min.css",
-    "./legacy": "./dist/legacy.css",
-    "./legacy/min": "./dist/legacy.min.css",
-    "./scss": "./src/scss/index.scss",
-    "./scss/legacy": "./src/scss/legacy.scss"
+    "./scss": "./src/scss/index.scss"
   },
   "scripts": {
     "build": "node scripts/build.mjs",

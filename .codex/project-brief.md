@@ -12,7 +12,6 @@ A small utility-first CSS package for web projects. It provides:
 - Bootstrap 5-style grid classes.
 - CSS output for normal projects.
 - SCSS source for Sass users.
-- Optional legacy aliases in a separate bundle.
 - Static docs/demo for GitHub Pages.
 
 ## Where It Comes From
@@ -64,13 +63,12 @@ Published package should not include:
 - Responsive prefixes: `sm`, `md`, `lg`, `xl`, `2xl`.
 - Grid values use Bootstrap 5 breakpoints.
 - Default grid gutter is `4px`, giving `2px` per column side.
-- Default bundle excludes legacy aliases.
+- No alias bundle exists. Only Tailwind-like naming is supported.
 
 ## Risks To Watch
 
 - Expanding utilities too much and becoming another large framework.
-- Breaking naming compatibility without migration docs.
+- Breaking naming compatibility without docs and tests.
 - Editing generated output without generator changes.
 - Shipping repo-only agent docs in npm package.
 - Adding private references accidentally.
-

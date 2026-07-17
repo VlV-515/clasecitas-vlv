@@ -2,9 +2,9 @@
 
 ## Naming
 
-- Default API uses Tailwind-like names.
-- Legacy aliases live only in `legacy.css` and `src/scss/legacy.scss`.
-- Do not add legacy aliases to `dist/clasecitas.css`.
+- Public API uses Tailwind-like names only.
+- Do not add Bootstrap-like aliases such as `justify-content-between`.
+- Do not add alias bundles, alias exports, or alias-only files.
 
 ## Spacing
 
@@ -27,9 +27,4 @@
 
 ## Compatibility
 
-When renaming or replacing a public class:
-
-1. Keep old behavior in `legacy.css` if practical.
-2. Add migration docs.
-3. Add or update tests.
-
+When renaming or replacing a public class, update docs and tests in the same change. Do not keep alias classes for old names.

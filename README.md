@@ -28,16 +28,6 @@ Or with a stylesheet bundler:
 @use "clasecitas-vlv/scss";
 ```
 
-## Optional Legacy Aliases
-
-Legacy aliases are not loaded by default:
-
-```js
-import "clasecitas-vlv/legacy";
-```
-
-Use this only while migrating older markup. New code should use the Tailwind-like names documented below.
-
 ## Examples
 
 ```html
@@ -83,5 +73,4 @@ Classes are mobile-first. Unprefixed utilities apply to all screen sizes; prefix
 ## More Docs
 
 - [Class reference](docs/reference.md)
-- [Migration guide](docs/migration.md)
 - [AI usage guide](docs/AI.md)

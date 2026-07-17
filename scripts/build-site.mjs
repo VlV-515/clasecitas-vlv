@@ -11,5 +11,3 @@ await rm(siteDist, { recursive: true, force: true });
 await mkdir(assetsDist, { recursive: true });
 await cp(siteSrc, siteDist, { recursive: true });
 await cp(path.join(rootDir, "dist", "clasecitas.css"), path.join(assetsDist, "clasecitas.css"));
-await cp(path.join(rootDir, "dist", "legacy.css"), path.join(assetsDist, "legacy.css"));
-

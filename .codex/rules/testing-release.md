@@ -20,7 +20,7 @@ Tests in `scripts/test.mjs` must verify public behavior:
 - generated responsive selectors
 - breakpoint values
 - grid gutter behavior
-- default bundle excludes legacy aliases
+- no alias files, exports, or selectors exist
 
 ## Lint
 
@@ -32,4 +32,3 @@ Tests in `scripts/test.mjs` must verify public behavior:
 - Release flow uses release-please.
 - npm publish uses GitHub Actions and Trusted Publishing.
 - Publish only from releases after validation passes.
-

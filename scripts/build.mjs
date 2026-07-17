@@ -3,7 +3,6 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { minify } from "./css-utils.mjs";
 import { generateGrid } from "./generate-grid.mjs";
-import { generateLegacy } from "./generate-legacy.mjs";
 import { generateResponsive } from "./generate-responsive.mjs";
 import { generateUtilities } from "./generate-utilities.mjs";
 
@@ -30,18 +29,12 @@ const base = await readSourceScss("_base.scss");
 const utilities = generateUtilities();
 const grid = generateGrid();
 const responsive = generateResponsive();
-const legacy = generateLegacy();
 
 await writeGenerated("_utilities.scss", utilities);
 await writeGenerated("_grid.scss", grid);
 await writeGenerated("_responsive.scss", responsive);
-await writeGenerated("_legacy.scss", legacy);
 
 const css = [banner, tokens, base, utilities, grid, responsive].join("\n\n");
-const legacyCss = [banner, legacy].join("\n\n");
 
 await writeFile(path.join(distDir, "clasecitas.css"), `${css}\n`);
 await writeFile(path.join(distDir, "clasecitas.min.css"), `${minify(css)}\n`);
-await writeFile(path.join(distDir, "legacy.css"), `${legacyCss}\n`);
-await writeFile(path.join(distDir, "legacy.min.css"), `${minify(legacyCss)}\n`);
-
