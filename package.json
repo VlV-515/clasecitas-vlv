@@ -12,8 +12,6 @@
   "style": "dist/clasecitas.css",
   "sass": "src/scss/index.scss",
   "files": [
-    ".codex",
-    "AGENTS.md",
     "dist",
     "src/scss",
     "docs",

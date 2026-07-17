@@ -2,8 +2,6 @@
 
 Use this guide when generating markup with `clasecitas-vlv`.
 
-For repository maintenance tasks, start with root `AGENTS.md` and the files under `.codex/`.
-
 ## Rules
 
 - Prefer Tailwind-like utility names from the default bundle.
