@@ -153,7 +153,7 @@ async function assertTagDoesNotExist(tagName) {
 }
 
 async function stageReleaseFiles() {
-  await run("git", ["add", "package.json", "dist", "src/scss/generated"]);
+  await run("git", ["add", "package.json", "package-lock.json", "dist", "src/scss/generated"]);
 }
 
 async function main() {
