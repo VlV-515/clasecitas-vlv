@@ -10,6 +10,34 @@ It ships plain CSS for any Node project and SCSS source for teams that prefer Sa
 npm install clasecitas-vlv
 ```
 
+## CDN Usage
+
+Use a version-pinned CDN URL in production so your styles stay predictable across deployments.
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.0.3/dist/clasecitas.min.css"
+>
+```
+
+You can also use UNPKG:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/clasecitas-vlv@1.0.3/dist/clasecitas.min.css"
+>
+```
+
+If you prefer CSS imports:
+
+```css
+@import url("https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.0.3/dist/clasecitas.min.css");
+```
+
+Avoid unpinned CDN URLs in app code and docs examples. When a new package version is released, update these versioned links to the latest published version instead of using `@latest`.
+
 ## CSS Usage
 
 ```js

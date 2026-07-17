@@ -34,11 +34,13 @@ npm run release:publish -- <bump> --tag next
 ```
 
 6. Report the new version, release commit, git tag, push result, and npm publish result.
+7. If public docs contain version-pinned CDN examples, update them to the new published version as part of the release change. Do not switch them to `@latest`.
 
 ## Notes
 
 - The guarded publish command validates the repo before bumping the version.
 - The command creates the release commit as `chore(release): vX.Y.Z`.
 - The command pushes GitHub before it publishes to npm.
+- Keep version-pinned CDN examples in `README.md` and `docs/AI.md` aligned with the current published version.
 - If publish fails after the git push, do not create another version bump blindly. Inspect the existing commit/tag and continue from there.
 - If the owner explicitly wants the stricter release gate, run `npm audit --audit-level=moderate` before the publish command.

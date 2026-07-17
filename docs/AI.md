@@ -9,6 +9,35 @@ Use this guide when generating markup with `clasecitas-vlv`.
 - Do not add Tailwind CSS or Bootstrap as dependencies just to use these classes.
 - Use mobile-first responsive classes: base class first, then `sm:`, `md:`, `lg:`, `xl:`, `2xl:`.
 - Use Bootstrap 5-style grid classes only for row/column layout.
+- When showing CDN usage, prefer version-pinned URLs to `dist/clasecitas.min.css`.
+- When the package version changes, update every CDN example to the newest published version.
+- Do not use `@latest` in generated CDN snippets or docs examples.
+
+## CDN Usage
+
+Prefer jsDelivr for primary CDN examples:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.0.3/dist/clasecitas.min.css"
+>
+```
+
+UNPKG is also supported:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/clasecitas-vlv@1.0.3/dist/clasecitas.min.css"
+>
+```
+
+If writing CSS instead of HTML:
+
+```css
+@import url("https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.0.3/dist/clasecitas.min.css");
+```
 
 ## Preferred Patterns
 

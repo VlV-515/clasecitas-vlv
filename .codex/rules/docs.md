@@ -14,3 +14,6 @@ Update docs when public API changes:
 - Keep examples framework-neutral.
 - Avoid private project references.
 - Document only supported Tailwind-like class names.
+- If docs include CDN examples, use explicit version-pinned package URLs.
+- When the package version changes, update every pinned CDN URL in public docs to the newest published version.
+- Never document CDN examples with `@latest`.
