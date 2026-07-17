@@ -1959,136 +1959,388 @@
 
 /* Color */
 
-.text-primary {
-  color: var(--cc-color-primary);
+.text-white {
+  color: var(--cc-color-white);
 }
 
-.bg-primary {
-  background-color: var(--cc-color-primary);
+.bg-white {
+  background-color: var(--cc-color-white);
 }
 
-.border-primary {
-  border-color: var(--cc-color-primary);
+.border-white {
+  border-color: var(--cc-color-white);
 }
 
-.text-secondary {
-  color: var(--cc-color-secondary);
+.divider-white {
+  background-color: var(--cc-color-white);
 }
 
-.bg-secondary {
-  background-color: var(--cc-color-secondary);
+.text-black {
+  color: var(--cc-color-black);
 }
 
-.border-secondary {
-  border-color: var(--cc-color-secondary);
+.bg-black {
+  background-color: var(--cc-color-black);
 }
 
-.text-success {
-  color: var(--cc-color-success);
+.border-black {
+  border-color: var(--cc-color-black);
 }
 
-.bg-success {
-  background-color: var(--cc-color-success);
+.divider-black {
+  background-color: var(--cc-color-black);
 }
 
-.border-success {
-  border-color: var(--cc-color-success);
+.text-slate {
+  color: var(--cc-color-slate);
 }
 
-.text-warning {
-  color: var(--cc-color-warning);
+.bg-slate {
+  background-color: var(--cc-color-slate);
 }
 
-.bg-warning {
-  background-color: var(--cc-color-warning);
+.border-slate {
+  border-color: var(--cc-color-slate);
 }
 
-.border-warning {
-  border-color: var(--cc-color-warning);
+.divider-slate {
+  background-color: var(--cc-color-slate);
 }
 
-.text-danger {
-  color: var(--cc-color-danger);
+.text-gray {
+  color: var(--cc-color-gray);
 }
 
-.bg-danger {
-  background-color: var(--cc-color-danger);
+.bg-gray {
+  background-color: var(--cc-color-gray);
 }
 
-.border-danger {
-  border-color: var(--cc-color-danger);
+.border-gray {
+  border-color: var(--cc-color-gray);
 }
 
-.text-info {
-  color: var(--cc-color-info);
+.divider-gray {
+  background-color: var(--cc-color-gray);
 }
 
-.bg-info {
-  background-color: var(--cc-color-info);
+.text-zinc {
+  color: var(--cc-color-zinc);
 }
 
-.border-info {
-  border-color: var(--cc-color-info);
+.bg-zinc {
+  background-color: var(--cc-color-zinc);
 }
 
-.text-light {
-  color: var(--cc-color-light);
+.border-zinc {
+  border-color: var(--cc-color-zinc);
 }
 
-.bg-light {
-  background-color: var(--cc-color-light);
+.divider-zinc {
+  background-color: var(--cc-color-zinc);
 }
 
-.border-light {
-  border-color: var(--cc-color-light);
+.text-neutral {
+  color: var(--cc-color-neutral);
 }
 
-.text-dark {
-  color: var(--cc-color-dark);
+.bg-neutral {
+  background-color: var(--cc-color-neutral);
 }
 
-.bg-dark {
-  background-color: var(--cc-color-dark);
+.border-neutral {
+  border-color: var(--cc-color-neutral);
 }
 
-.border-dark {
-  border-color: var(--cc-color-dark);
+.divider-neutral {
+  background-color: var(--cc-color-neutral);
 }
 
-.text-muted {
-  color: var(--cc-color-muted);
+.text-stone {
+  color: var(--cc-color-stone);
 }
 
-.bg-muted {
-  background-color: var(--cc-color-muted);
+.bg-stone {
+  background-color: var(--cc-color-stone);
 }
 
-.border-muted {
-  border-color: var(--cc-color-muted);
+.border-stone {
+  border-color: var(--cc-color-stone);
 }
 
-.text-surface {
-  color: var(--cc-color-surface);
+.divider-stone {
+  background-color: var(--cc-color-stone);
 }
 
-.bg-surface {
-  background-color: var(--cc-color-surface);
+.text-red {
+  color: var(--cc-color-red);
 }
 
-.border-surface {
-  border-color: var(--cc-color-surface);
+.bg-red {
+  background-color: var(--cc-color-red);
 }
 
-.text-border {
-  color: var(--cc-color-border);
+.border-red {
+  border-color: var(--cc-color-red);
 }
 
-.bg-border {
-  background-color: var(--cc-color-border);
+.divider-red {
+  background-color: var(--cc-color-red);
 }
 
-.border-border {
-  border-color: var(--cc-color-border);
+.text-orange {
+  color: var(--cc-color-orange);
+}
+
+.bg-orange {
+  background-color: var(--cc-color-orange);
+}
+
+.border-orange {
+  border-color: var(--cc-color-orange);
+}
+
+.divider-orange {
+  background-color: var(--cc-color-orange);
+}
+
+.text-amber {
+  color: var(--cc-color-amber);
+}
+
+.bg-amber {
+  background-color: var(--cc-color-amber);
+}
+
+.border-amber {
+  border-color: var(--cc-color-amber);
+}
+
+.divider-amber {
+  background-color: var(--cc-color-amber);
+}
+
+.text-yellow {
+  color: var(--cc-color-yellow);
+}
+
+.bg-yellow {
+  background-color: var(--cc-color-yellow);
+}
+
+.border-yellow {
+  border-color: var(--cc-color-yellow);
+}
+
+.divider-yellow {
+  background-color: var(--cc-color-yellow);
+}
+
+.text-lime {
+  color: var(--cc-color-lime);
+}
+
+.bg-lime {
+  background-color: var(--cc-color-lime);
+}
+
+.border-lime {
+  border-color: var(--cc-color-lime);
+}
+
+.divider-lime {
+  background-color: var(--cc-color-lime);
+}
+
+.text-green {
+  color: var(--cc-color-green);
+}
+
+.bg-green {
+  background-color: var(--cc-color-green);
+}
+
+.border-green {
+  border-color: var(--cc-color-green);
+}
+
+.divider-green {
+  background-color: var(--cc-color-green);
+}
+
+.text-emerald {
+  color: var(--cc-color-emerald);
+}
+
+.bg-emerald {
+  background-color: var(--cc-color-emerald);
+}
+
+.border-emerald {
+  border-color: var(--cc-color-emerald);
+}
+
+.divider-emerald {
+  background-color: var(--cc-color-emerald);
+}
+
+.text-teal {
+  color: var(--cc-color-teal);
+}
+
+.bg-teal {
+  background-color: var(--cc-color-teal);
+}
+
+.border-teal {
+  border-color: var(--cc-color-teal);
+}
+
+.divider-teal {
+  background-color: var(--cc-color-teal);
+}
+
+.text-cyan {
+  color: var(--cc-color-cyan);
+}
+
+.bg-cyan {
+  background-color: var(--cc-color-cyan);
+}
+
+.border-cyan {
+  border-color: var(--cc-color-cyan);
+}
+
+.divider-cyan {
+  background-color: var(--cc-color-cyan);
+}
+
+.text-sky {
+  color: var(--cc-color-sky);
+}
+
+.bg-sky {
+  background-color: var(--cc-color-sky);
+}
+
+.border-sky {
+  border-color: var(--cc-color-sky);
+}
+
+.divider-sky {
+  background-color: var(--cc-color-sky);
+}
+
+.text-blue {
+  color: var(--cc-color-blue);
+}
+
+.bg-blue {
+  background-color: var(--cc-color-blue);
+}
+
+.border-blue {
+  border-color: var(--cc-color-blue);
+}
+
+.divider-blue {
+  background-color: var(--cc-color-blue);
+}
+
+.text-indigo {
+  color: var(--cc-color-indigo);
+}
+
+.bg-indigo {
+  background-color: var(--cc-color-indigo);
+}
+
+.border-indigo {
+  border-color: var(--cc-color-indigo);
+}
+
+.divider-indigo {
+  background-color: var(--cc-color-indigo);
+}
+
+.text-violet {
+  color: var(--cc-color-violet);
+}
+
+.bg-violet {
+  background-color: var(--cc-color-violet);
+}
+
+.border-violet {
+  border-color: var(--cc-color-violet);
+}
+
+.divider-violet {
+  background-color: var(--cc-color-violet);
+}
+
+.text-purple {
+  color: var(--cc-color-purple);
+}
+
+.bg-purple {
+  background-color: var(--cc-color-purple);
+}
+
+.border-purple {
+  border-color: var(--cc-color-purple);
+}
+
+.divider-purple {
+  background-color: var(--cc-color-purple);
+}
+
+.text-fuchsia {
+  color: var(--cc-color-fuchsia);
+}
+
+.bg-fuchsia {
+  background-color: var(--cc-color-fuchsia);
+}
+
+.border-fuchsia {
+  border-color: var(--cc-color-fuchsia);
+}
+
+.divider-fuchsia {
+  background-color: var(--cc-color-fuchsia);
+}
+
+.text-pink {
+  color: var(--cc-color-pink);
+}
+
+.bg-pink {
+  background-color: var(--cc-color-pink);
+}
+
+.border-pink {
+  border-color: var(--cc-color-pink);
+}
+
+.divider-pink {
+  background-color: var(--cc-color-pink);
+}
+
+.text-rose {
+  color: var(--cc-color-rose);
+}
+
+.bg-rose {
+  background-color: var(--cc-color-rose);
+}
+
+.border-rose {
+  border-color: var(--cc-color-rose);
+}
+
+.divider-rose {
+  background-color: var(--cc-color-rose);
 }
 
 /* Border */
@@ -2096,7 +2348,7 @@
 .border {
   border-width: 1px;
   border-style: solid;
-  border-color: var(--cc-color-border);
+  border-color: rgb(15 23 42 / 0.12);
 }
 
 .border-0 {
@@ -2106,25 +2358,25 @@
 .border-t {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: var(--cc-color-border);
+  border-top-color: rgb(15 23 42 / 0.12);
 }
 
 .border-r {
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: var(--cc-color-border);
+  border-right-color: rgb(15 23 42 / 0.12);
 }
 
 .border-b {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--cc-color-border);
+  border-bottom-color: rgb(15 23 42 / 0.12);
 }
 
 .border-l {
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: var(--cc-color-border);
+  border-left-color: rgb(15 23 42 / 0.12);
 }
 
 .border-solid {
@@ -2324,8 +2576,8 @@
 /* Small components */
 
 .card {
-  background-color: var(--cc-color-surface);
-  border: 1px solid var(--cc-color-border);
+  background-color: var(--cc-color-white);
+  border: 1px solid rgb(15 23 42 / 0.12);
   border-radius: 0.5rem;
   padding: 1rem;
 }
@@ -2343,5 +2595,5 @@
 .divider {
   height: 1px;
   width: 100%;
-  background-color: var(--cc-color-border);
+  background-color: rgb(15 23 42 / 0.12);
 }

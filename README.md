@@ -33,10 +33,10 @@ Or with a stylesheet bundler:
 ```html
 <section class="card flex flex-col gap-4 p-4 md:flex-row md:items-center md:justify-between">
   <div>
-    <h2 class="m-0 text-2xl font-bold text-dark">Dashboard</h2>
-    <p class="m-0 text-sm text-muted">Responsive utility classes, no framework dependency.</p>
+    <h2 class="m-0 text-2xl font-bold text-slate">Dashboard</h2>
+    <p class="m-0 text-sm text-gray">Responsive utility classes, no framework dependency.</p>
   </div>
-  <button class="rounded-lg bg-primary px-4 py-2 font-semibold text-surface">
+  <button class="rounded-lg bg-blue px-4 py-2 font-semibold text-white">
     Continue
   </button>
 </section>

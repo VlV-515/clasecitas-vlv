@@ -32,6 +32,11 @@ includes(css, ".row > * {", "row child selector");
 includes(css, "padding-right: calc(var(--cc-gutter-x) * 0.5);", "row child right padding");
 includes(css, "padding-left: calc(var(--cc-gutter-x) * 0.5);", "row child left padding");
 includes(css, "--cc-gutter-x: 4px;", "default 4px gutter");
+includes(css, "--cc-color-blue: #3b82f6;", "blue token");
+includes(css, ".text-red {\n  color: var(--cc-color-red);\n}", "text-red");
+includes(css, ".bg-blue {\n  background-color: var(--cc-color-blue);\n}", "bg-blue");
+includes(css, ".border-emerald {\n  border-color: var(--cc-color-emerald);\n}", "border-emerald");
+includes(css, ".divider-amber {\n  background-color: var(--cc-color-amber);\n}", "divider-amber");
 
 const removedAliasName = ["leg", "acy"].join("");
 const forbiddenAliases = [
@@ -46,6 +51,25 @@ const forbiddenAliases = [
 ];
 
 for (const forbidden of forbiddenAliases) {
+  assert(!css.includes(forbidden), `Default bundle must not include ${forbidden}`);
+}
+
+for (const forbidden of [
+  "--cc-color-primary:",
+  "--cc-color-secondary:",
+  "--cc-color-success:",
+  "--cc-color-warning:",
+  "--cc-color-danger:",
+  "--cc-color-info:",
+  "--cc-color-light:",
+  "--cc-color-dark:",
+  "--cc-color-muted:",
+  "--cc-color-surface:",
+  "--cc-color-border:",
+  ".text-primary {",
+  ".bg-primary {",
+  ".border-primary {"
+]) {
   assert(!css.includes(forbidden), `Default bundle must not include ${forbidden}`);
 }
 

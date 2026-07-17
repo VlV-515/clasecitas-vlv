@@ -15,8 +15,8 @@ Use this guide when generating markup with `clasecitas-vlv`.
 ```html
 <section class="card p-4">
   <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-    <h2 class="m-0 text-xl font-semibold text-dark">Title</h2>
-    <button class="rounded-lg bg-primary px-4 py-2 font-semibold text-surface">Action</button>
+    <h2 class="m-0 text-xl font-semibold text-slate">Title</h2>
+    <button class="rounded-lg bg-blue px-4 py-2 font-semibold text-white">Action</button>
   </div>
 </section>
 ```

@@ -1,5 +1,5 @@
 import { block, rule } from "./css-utils.mjs";
-import { colors, fontWeights, maxScale, radius, shadows, spacingValue, textSizes } from "./style-data.mjs";
+import { colors, defaultBorderColor, fontWeights, maxScale, radius, shadows, spacingValue, textSizes } from "./style-data.mjs";
 
 function spacingUtilities() {
   const rules = [];
@@ -150,10 +150,11 @@ function typographyUtilities() {
 function colorUtilities() {
   const rules = [];
 
-  for (const color of colors) {
+  for (const color of Object.keys(colors)) {
     rules.push(rule(`text-${color}`, { color: `var(--cc-color-${color})` }));
     rules.push(rule(`bg-${color}`, { "background-color": `var(--cc-color-${color})` }));
     rules.push(rule(`border-${color}`, { "border-color": `var(--cc-color-${color})` }));
+    rules.push(rule(`divider-${color}`, { "background-color": `var(--cc-color-${color})` }));
   }
 
   return block("Color", rules);
@@ -161,12 +162,12 @@ function colorUtilities() {
 
 function borderUtilities() {
   const rules = [
-    rule("border", { "border-width": "1px", "border-style": "solid", "border-color": "var(--cc-color-border)" }),
+    rule("border", { "border-width": "1px", "border-style": "solid", "border-color": defaultBorderColor }),
     rule("border-0", { "border-width": "0" }),
-    rule("border-t", { "border-top-width": "1px", "border-top-style": "solid", "border-top-color": "var(--cc-color-border)" }),
-    rule("border-r", { "border-right-width": "1px", "border-right-style": "solid", "border-right-color": "var(--cc-color-border)" }),
-    rule("border-b", { "border-bottom-width": "1px", "border-bottom-style": "solid", "border-bottom-color": "var(--cc-color-border)" }),
-    rule("border-l", { "border-left-width": "1px", "border-left-style": "solid", "border-left-color": "var(--cc-color-border)" }),
+    rule("border-t", { "border-top-width": "1px", "border-top-style": "solid", "border-top-color": defaultBorderColor }),
+    rule("border-r", { "border-right-width": "1px", "border-right-style": "solid", "border-right-color": defaultBorderColor }),
+    rule("border-b", { "border-bottom-width": "1px", "border-bottom-style": "solid", "border-bottom-color": defaultBorderColor }),
+    rule("border-l", { "border-left-width": "1px", "border-left-style": "solid", "border-left-color": defaultBorderColor }),
     rule("border-solid", { "border-style": "solid" }),
     rule("border-dashed", { "border-style": "dashed" }),
     rule("border-dotted", { "border-style": "dotted" })
@@ -235,8 +236,8 @@ function interactivityUtilities() {
 function componentUtilities() {
   return block("Small components", [
     rule("card", {
-      "background-color": "var(--cc-color-surface)",
-      border: "1px solid var(--cc-color-border)",
+      "background-color": "var(--cc-color-white)",
+      border: `1px solid ${defaultBorderColor}`,
       "border-radius": "0.5rem",
       padding: "1rem"
     }),
@@ -252,7 +253,7 @@ function componentUtilities() {
     rule("divider", {
       height: "1px",
       width: "100%",
-      "background-color": "var(--cc-color-border)"
+      "background-color": defaultBorderColor
     })
   ]);
 }
@@ -271,4 +272,3 @@ export function generateUtilities() {
     componentUtilities()
   ].join("\n\n");
 }
-

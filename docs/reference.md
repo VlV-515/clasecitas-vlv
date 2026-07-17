@@ -37,23 +37,25 @@ All spacing utilities use a `0.25rem` step and support `0..20`.
 
 ## Color
 
-Semantic variables power text, background, and border utilities:
+Explicit color families power text, background, border, and divider utilities:
 
-- `text-primary`, `bg-primary`, `border-primary`.
-- `primary`, `secondary`, `success`, `warning`, `danger`, `info`, `light`, `dark`, `muted`, `surface`, `border`.
+- Utility groups: `text-*`, `bg-*`, `border-*`, `divider-*`.
+- Color names: `white`, `black`, `slate`, `gray`, `zinc`, `neutral`, `stone`, `red`, `orange`, `amber`, `yellow`, `lime`, `green`, `emerald`, `teal`, `cyan`, `sky`, `blue`, `indigo`, `violet`, `purple`, `fuchsia`, `pink`, `rose`.
+- Named colors use the Tailwind `500` tone for that family, exposed without the `-500` suffix.
 
 Customize with CSS variables:
 
 ```css
 :root {
-  --cc-color-primary: #2563eb;
-  --cc-color-surface: #ffffff;
+  --cc-color-blue: #3b82f6;
+  --cc-color-red: #ef4444;
 }
 ```
 
 ## Borders, Sizing, Effects
 
 - Borders: `border`, `border-0`, `border-t`, `border-r`, `border-b`, `border-l`, `border-solid`, `border-dashed`, `border-dotted`.
+- Divider helpers: `divider`, plus `divider-*` color variants such as `divider-slate` or `divider-red`.
 - Radius: `rounded-none`, `rounded-xs`, `rounded-sm`, `rounded-md`, `rounded-lg`, `rounded-xl`, `rounded-2xl`, `rounded-3xl`, `rounded-full`.
 - Width: `w-auto`, `w-full`, `w-screen`, `w-1/2`, `w-1/3`, `w-2/3`, `w-1/4`, `w-3/4`.
 - Height: `h-auto`, `h-full`, `h-screen`.
@@ -67,4 +69,3 @@ Use `sm:`, `md:`, `lg:`, `xl:`, and `2xl:` before responsive-enabled utilities:
 ```html
 <div class="flex flex-col gap-4 md:flex-row lg:gap-8"></div>
 ```
-
