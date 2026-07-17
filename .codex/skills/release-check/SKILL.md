@@ -1,11 +1,11 @@
 ---
 name: release-check
-description: Validate the package before publishing or opening a release PR.
+description: Validate the package before publishing or preparing release automation.
 ---
 
 # Release Check Skill
 
-Use this skill before npm publish, release PRs, or Pages deployment.
+Use this skill before npm publish or before adding release automation.
 
 ## Steps
 
@@ -18,17 +18,15 @@ Use this skill before npm publish, release PRs, or Pages deployment.
 npm run build
 npm run lint
 npm run test
-npm run site:build
 npm run pack:dry
 npm audit --audit-level=moderate
 ```
 
 5. Confirm package contents from `npm pack --dry-run`.
-6. Confirm GitHub Pages workflow and npm publish workflow exist.
+6. Confirm no GitHub Actions workflows are present unless the owner explicitly requested automation.
 
 ## Publish Notes
 
 - npm package name must be available or already owned.
-- GitHub repository must have Pages enabled for GitHub Actions.
-- npm Trusted Publisher must point at the publish workflow.
-
+- npm automation is a future setup step.
+- Do not add GitHub Actions workflows until requested.

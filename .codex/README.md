@@ -24,9 +24,7 @@ When changing public class behavior, update all relevant places:
 
 - `README.md`
 - `docs/reference.md`
-- `docs/migration.md` if aliases or migration paths change
 - `docs/AI.md`
-- `site/src/index.html` if examples should show the feature
 - Tests in `scripts/test.mjs`
 
 ## Package Boundary

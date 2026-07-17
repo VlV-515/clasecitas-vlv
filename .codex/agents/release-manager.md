@@ -10,13 +10,10 @@ Prepare and verify package releases.
 - `npm run build` passes.
 - `npm run lint` passes.
 - `npm run test` passes.
-- `npm run site:build` passes.
 - `npm run pack:dry` shows expected files.
 - `npm audit --audit-level=moderate` passes.
-- GitHub Pages workflow is present.
-- npm publish workflow uses provenance.
+- No GitHub Actions workflows are present unless automation was explicitly requested.
 
 ## Notes
 
-Do not publish manually if GitHub Trusted Publishing is configured. Prefer release automation.
-
+Release automation is intentionally deferred. Do not add workflows or GitHub Pages setup until the owner asks for them.

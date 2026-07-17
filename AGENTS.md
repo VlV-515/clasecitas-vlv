@@ -33,7 +33,6 @@ npm install
 npm run build
 npm run lint
 npm run test
-npm run site:build
 npm run pack:dry
 ```
 
@@ -43,7 +42,6 @@ Run the full validation set before closing changes:
 npm run build
 npm run lint
 npm run test
-npm run site:build
 npm run pack:dry
 ```
 
@@ -55,8 +53,6 @@ npm run pack:dry
 - `src/scss/_base.scss`: base CSS.
 - `src/scss/generated/`: generated SCSS partials. Do not edit directly.
 - `dist/`: generated publishable CSS. Regenerate with `npm run build`.
-- `site/src/`: demo source for Pages.
-- `site/dist/`: generated demo output. Regenerate with `npm run site:build`.
 
 ## Init Context For Agents
 
@@ -75,7 +71,7 @@ Public consumer docs live in `README.md` and `docs/`. Repo-maintenance docs live
 - `.codex/rules/project.md`
 - `.codex/rules/style-api.md`
 - `.codex/rules/grid-responsive.md`
-- `.codex/rules/docs-site.md`
+- `.codex/rules/docs.md`
 - `.codex/rules/testing-release.md`
 
 ## Skills
@@ -83,7 +79,7 @@ Public consumer docs live in `README.md` and `docs/`. Repo-maintenance docs live
 Use the local skills as task playbooks:
 
 - `.codex/skills/update-utilities/SKILL.md`
-- `.codex/skills/update-docs-site/SKILL.md`
+- `.codex/skills/update-docs/SKILL.md`
 - `.codex/skills/release-check/SKILL.md`
 
 ## Agent Roles
@@ -102,7 +98,6 @@ Use Conventional Commits:
 - `feat: add utility`
 - `fix: correct selector output`
 - `docs: update usage guide`
-- `ci: update workflow`
 - `chore: update lockfile`
 
 Do not add co-author trailers unless the user explicitly asks.

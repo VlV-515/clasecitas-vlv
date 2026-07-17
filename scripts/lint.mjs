@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const ignoredDirs = new Set([".git", ".husky/_", "node_modules", "site/dist"]);
+const ignoredDirs = new Set([".git", ".husky/_", "node_modules"]);
 const forbiddenProjectTerms = [
   new RegExp(`\\b${"KE"}${"20"}\\b`, "i"),
   new RegExp(`\\b${"ko"}${"re"}\\b`, "i"),

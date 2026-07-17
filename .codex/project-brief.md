@@ -12,7 +12,7 @@ A small utility-first CSS package for web projects. It provides:
 - Bootstrap 5-style grid classes.
 - CSS output for normal projects.
 - SCSS source for Sass users.
-- Static docs/demo for GitHub Pages.
+- Public docs for npm package users.
 
 ## Where It Comes From
 
@@ -35,7 +35,7 @@ Many projects need a lightweight middle ground:
 - Follow Tailwind-like names when possible so users can reuse familiar docs.
 - Follow Bootstrap 5 grid breakpoints and column naming.
 - Keep generated CSS checked in for simple npm consumption.
-- Keep release automation ready, but do not publish until GitHub/npm setup exists.
+- Keep the package ready for manual npm publishing. GitHub Pages and release automation are intentionally not configured in this repo.
 
 ## Public Boundary
 
