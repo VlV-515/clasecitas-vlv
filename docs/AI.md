@@ -32,7 +32,7 @@ Prefer jsDelivr for primary CDN examples:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.0.3/dist/clasecitas.min.css"
+  href="https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.1.0/dist/clasecitas.min.css"
 >
 ```
 
@@ -41,14 +41,14 @@ UNPKG is also supported:
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/clasecitas-vlv@1.0.3/dist/clasecitas.min.css"
+  href="https://unpkg.com/clasecitas-vlv@1.1.0/dist/clasecitas.min.css"
 >
 ```
 
 If writing CSS instead of HTML:
 
 ```css
-@import url("https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.0.3/dist/clasecitas.min.css");
+@import url("https://cdn.jsdelivr.net/npm/clasecitas-vlv@1.1.0/dist/clasecitas.min.css");
 ```
 
 ## Preferred Patterns
