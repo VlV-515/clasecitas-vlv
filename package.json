@@ -1,6 +1,6 @@
 {
   "name": "clasecitas-vlv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small utility-first CSS toolkit with Tailwind-like naming and a Bootstrap 5-style grid.",
   "type": "module",
   "license": "MIT",
