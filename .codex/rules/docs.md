@@ -17,3 +17,4 @@ Update docs when public API changes:
 - If docs include CDN examples, use explicit version-pinned package URLs.
 - When the package version changes, update every pinned CDN URL in public docs to the newest published version.
 - Never document CDN examples with `@latest`.
+- If docs mention `clasecitas-vlv-types`, keep its documented version aligned with `clasecitas-vlv`.

@@ -12,6 +12,18 @@ Use this guide when generating markup with `clasecitas-vlv`.
 - When showing CDN usage, prefer version-pinned URLs to `dist/clasecitas.min.css`.
 - When the package version changes, update every CDN example to the newest published version.
 - Do not use `@latest` in generated CDN snippets or docs examples.
+- When referencing the companion types package, use `clasecitas-vlv-types` with the same version as `clasecitas-vlv`.
+
+## Companion Types Package
+
+If a project wants TypeScript helpers and class-name types, reference the companion package:
+
+```bash
+npm install clasecitas-vlv
+npm install -D clasecitas-vlv-types
+```
+
+Keep both package versions identical. The companion types package always uses the same version number as `clasecitas-vlv`.
 
 ## CDN Usage
 

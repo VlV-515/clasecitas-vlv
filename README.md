@@ -10,6 +10,15 @@ It ships plain CSS for any Node project and SCSS source for teams that prefer Sa
 npm install clasecitas-vlv
 ```
 
+If you also want TypeScript helpers and class-name types, install the matching `clasecitas-vlv-types` version:
+
+```bash
+npm install clasecitas-vlv
+npm install -D clasecitas-vlv-types
+```
+
+`clasecitas-vlv` and `clasecitas-vlv-types` use the same version number on purpose, so the correct companion types package always matches the package version you install.
+
 ## CDN Usage
 
 Use a version-pinned CDN URL in production so your styles stay predictable across deployments.
@@ -37,6 +46,8 @@ If you prefer CSS imports:
 ```
 
 Avoid unpinned CDN URLs in app code and docs examples. When a new package version is released, update these versioned links to the latest published version instead of using `@latest`.
+
+If your project also uses `clasecitas-vlv-types`, keep both package versions aligned.
 
 ## CSS Usage
 
