@@ -72,5 +72,6 @@ Classes are mobile-first. Unprefixed utilities apply to all screen sizes; prefix
 
 ## More Docs
 
+- [Homepage, guide, cheatsheet, and catalog](https://vlv-515.github.io/clasecitas-vlv-page/)
 - [Class reference](docs/reference.md)
 - [AI usage guide](docs/AI.md)
