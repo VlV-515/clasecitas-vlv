@@ -41,7 +41,8 @@
     "lint": "node scripts/lint.mjs",
     "test": "node scripts/test.mjs",
     "pack:dry": "npm pack --dry-run",
-    "prepare": "node scripts/prepare.mjs"
+    "prepare": "node scripts/prepare.mjs",
+    "release:publish": "node scripts/release-publish.mjs"
   },
   "keywords": [
     "css",

@@ -17,3 +17,4 @@ Prepare and verify package releases.
 ## Notes
 
 Release automation is intentionally deferred. Do not add workflows or GitHub Pages setup until the owner asks for them.
+For Codex-driven manual publishes, use `npm run release:publish -- <bump>` so the release commit, tag, push, and npm publish stay in one guarded flow.

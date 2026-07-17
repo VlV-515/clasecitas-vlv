@@ -6,20 +6,26 @@ import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const huskyBin = path.join(rootDir, "node_modules", ".bin", process.platform === "win32" ? "husky.cmd" : "husky");
+const gitConfigPath = path.join(rootDir, ".git", "config");
+const gitHooksDir = path.join(rootDir, ".git", "hooks");
 
-async function exists(filePath) {
+async function canAccess(filePath, mode) {
   try {
-    await access(filePath, constants.X_OK);
+    await access(filePath, mode);
     return true;
   } catch {
     return false;
   }
 }
 
-if (await exists(huskyBin)) {
+const canRunHusky = await canAccess(huskyBin, constants.X_OK);
+const canWriteGit = (await canAccess(gitConfigPath, constants.W_OK)) && (await canAccess(gitHooksDir, constants.W_OK));
+
+if (canRunHusky && canWriteGit) {
   const child = spawn(huskyBin, { cwd: rootDir, stdio: "inherit", shell: process.platform === "win32" });
   child.on("exit", (code) => process.exit(code ?? 0));
-} else {
+} else if (!canRunHusky) {
   console.log("husky binary not installed; skipping hook setup");
+} else {
+  console.log(".git is not writable; skipping hook setup");
 }
-

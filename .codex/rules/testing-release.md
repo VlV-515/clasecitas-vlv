@@ -32,3 +32,4 @@ Tests in `scripts/test.mjs` must verify public behavior:
 - Do not add release automation until the owner asks for it.
 - No GitHub Pages setup exists in this repo.
 - Publish only after validation passes and npm setup is explicitly requested.
+- The repo-default guarded publish path is `npm run release:publish -- <bump>`.

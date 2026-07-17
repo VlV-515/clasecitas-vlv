@@ -34,6 +34,7 @@ npm run build
 npm run lint
 npm run test
 npm run pack:dry
+npm run release:publish -- <patch|minor|major|prepatch|preminor|premajor|prerelease|x.y.z>
 ```
 
 Run the full validation set before closing changes:
@@ -81,6 +82,7 @@ Use the local skills as task playbooks:
 - `.codex/skills/update-utilities/SKILL.md`
 - `.codex/skills/update-docs/SKILL.md`
 - `.codex/skills/release-check/SKILL.md`
+- `.codex/skills/publish-release/SKILL.md`
 
 ## Agent Roles
 
