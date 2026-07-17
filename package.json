@@ -1,10 +1,18 @@
 {
   "name": "clasecitas-vlv",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "A small utility-first CSS toolkit with Tailwind-like naming and a Bootstrap 5-style grid.",
   "type": "module",
   "license": "MIT",
   "author": "VLV",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VlV-515/clasecitas-vlv.git"
+  },
+  "homepage": "https://github.com/VlV-515/clasecitas-vlv#readme",
+  "bugs": {
+    "url": "https://github.com/VlV-515/clasecitas-vlv/issues"
+  },
   "sideEffects": [
     "*.css",
     "*.scss"
